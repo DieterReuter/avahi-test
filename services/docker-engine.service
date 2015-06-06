@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone='no'?><!--*-nxml-*-->
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+<service-group>
+  <name replace-wildcards="yes">Docker-Engine=%h</name>
+  <service>
+    <type>_docker-engine._tcp</type>
+    <port>2376</port>
+    <txt-record>docker-version=1.6.2,docker-api=1.18,docker-osarch=linux/arm,docker-engine-uuid=A84DD0FA-F9C7-4A76-A341-078C32894C3F</txt-record>
+  </service>
+</service-group>

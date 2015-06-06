@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone='no'?><!--*-nxml-*-->
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+<service-group>
+  <name replace-wildcards="yes">Docker-Host=%h</name>
+  <service>
+    <type>_docker-host._tcp</type>
+    <port>22</port>
+    <txt-record>ssh-user=root,os-release=hypriot,docker-host-uuid=ABCA3DDC-227F-4F73-8F53-F71A589017EC</txt-record>
+  </service>
+</service-group>
